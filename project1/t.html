@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>T</title>
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+ 
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: fadeOutIntro 1s forwards;
+  animation-delay: 6s; 
+}
+
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translateY(20px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  70%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.intro h1 {
+  font-size: 50px;
+  margin: 0;
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out forwards;
+}
+
+.intro p {
+  font-size: 24px;
+  margin: 10px 0 0 0;
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out forwards;
+  animation-delay: 2s; 
+}
+
+.intro span {
+  display: block;
+  font-size: 18px;
+  margin-top: 15px;
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out forwards;
+  animation-delay: 4s;
+}
+
+
+@keyframes fadeOutIntro {
+  0%   { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+
+.main {
+  opacity: 0;
+  animation: fadeInMain 2s ease-in-out forwards;
+  animation-delay: 6s; 
+  padding-top: 50px;
+}
+
+
+@keyframes fadeInMain {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.definition{
+    text-align: justify;
+    width: 60%;
+    font-size: 20px;
+    line-height: 1.6;
+    margin:0 auto;
+}
+
+.title{
+    font-size:100px;
+    text-align:center;
+}
+
+.ipaNimg{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.info{
+    margin-left:50px;
+}
+
+button{
+    width:120px;
+    height:60px;
+    color:black;
+    background-color:white;
+    border-radius:25px;
+    font-size:16px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+  display:inline-block;
+  width:100px;
+  height:60px;
+  border-radius:25px;
+  background-color:white;
+  color:black;
+  align-items:center;
+}
+</style>
+</head>
+<body>
+
+
+
+  <div class="intro">
+    <h1>T... What is it?</h1>
+    <p>Thiri Htet Aung...?</p>
+    <span>Let's see!</span>
+  </div>
+  
+<div class="main">
+
+  <h1 class="title">T,t</h1>
+  <div class="buttons">
+   <a href="#introduction"> <button>Intro</button></a>
+   <a href="#sound"> <button>Pronunciation</button></a>
+   <a href="#example"><button>Examples</button></a>
+    <a href="main.html"><button>Home</button></a>
+  </div>
+  <hr>
+ <div class="info">
+  <section class="introduction">
+    <h2>Introduction</h2>
+    <p>The letter "T" is the  nineteenth of the alphabet. It has a long history and is used in many languages. It is one of the most important letters for forming words.</p>
+  </section>
+<br><br><br>
+  <section class="sound">
+    <h2>Pronunciation</h2>
+    <p>The letter "T" has different pronunciations:</p>
+    <ul>
+        <li>/t/ as in Tiger</li>
+        <li>/ʃ/ as in Nation</li>
+        <li>Silent in words like Listen</li>
+      
+    </ul>
+  </section>
+
+  <br><br><br>
+
+  <section class="example">
+    <h2>Examples</h2>
+    <button class="card">Tin</button>
+    <button class="card">Tall</button>
+    <button class="card">Tight</button>
+  </section>
+</div>
+</body>
+</html>
